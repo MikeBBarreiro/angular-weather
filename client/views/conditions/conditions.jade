@@ -14,7 +14,9 @@
   .col-xs-3
     .panel.panel-default
       .panel-body
-        h4 {{conditions.temp_f}} &deg;F
+        //h2 {{city}}
+        h2 {{conditions.display_location.full}}
         img(ng-src='{{conditions.icon_url}}')
+        h4 {{conditions.temp_f}} &deg;F
   .col-xs-9
 
